@@ -39,7 +39,7 @@
 
 <Card>
   <header>
-    <h2>How would you rate your service with us?</h2>
+    <h2>How would you rate your studying experience with us</h2>
   </header>
   <form on:submit|preventDefault={handleSubmit}>
     <RatingSelect on:rating-select={handleSelect} />
@@ -48,7 +48,7 @@
         type="text"
         on:input={handleInput}
         bind:value={text}
-        placeholder="Tell us something that keeps you coming back"
+        placeholder="Tell us more(for improving our services and quality of education)"
       />
       <Button disabled={btnDisabled} type="submit">Send</Button>
     </div>
@@ -88,8 +88,7 @@
   input:focus {
     outline: none;
   }
-
-  .message {
+  z .message {
     padding-top: 10px;
     text-align: center;
     color: rebeccapurple;
